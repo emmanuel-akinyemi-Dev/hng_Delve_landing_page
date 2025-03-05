@@ -1,42 +1,59 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  justify-content: center;
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   text-align: center;
+  padding: 20px;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  width: 150px; /* Adjust the size of the SVG */
+  height: auto;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #1a73e8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.header p {
+  font-size: 1.2rem;
+  color: #666;
 }
 
-.card {
-  padding: 2em;
+.download-section {
+  margin: 40px 0;
 }
 
-.read-the-docs {
+.download-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.download-button img {
+  height: 50px;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
   color: #888;
 }
