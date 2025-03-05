@@ -60,7 +60,7 @@ function App() {
       </section>
 
       <footer className="footer">
-        <p>&copy; 2023 Delve. All rights reserved.</p>
+        <p>&copy; 2025 Delve. All rights reserved.</p>
       </footer>
     </div>
   );
