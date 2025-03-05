@@ -57,3 +57,28 @@ body {
   font-size: 0.9rem;
   color: #888;
 }
+
+.file-download-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.file-download-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.file-download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #1a73e8;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.file-download-button:hover {
+  background-color: #1557b0;
+}

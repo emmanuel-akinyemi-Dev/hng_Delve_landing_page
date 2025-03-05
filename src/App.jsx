@@ -3,24 +3,26 @@ import "./App.css";
 import DelveLogo from "./assets/delve-logo.svg"; // Import the SVG file
 
 function App() {
+  // Direct download link for the file
+  const fileDownloadLink =
+    "https://drive.google.com/uc?export=download&id=1cFtIcpxIn9U3ZH02Q2D6GsxmxXxUS9dj";
+
   return (
     <div className="landing-page">
       <header className="header">
-        <img src={DelveLogo} alt="Delve Logo" className="logo" />{" "}
-        {/* Add the SVG image */}
+        <img src={DelveLogo} alt="Delve Logo" className="logo" />
         <h1>Delve</h1>
-        <p>
-          Explore the world with Delve - Your ultimate language learning
-          companion.
-        </p>
+        <p>Explore the world with Delve - Your ultimate travel companion.</p>
       </header>
 
       <section className="download-section">
         <h2>Download Now</h2>
         <div className="download-buttons">
           <a
-            href="https://play.google.com/store/apps/details?id=com.delve.app"
+            href={fileDownloadLink}
+            // href="https://play.google.com/store/apps/details?id=com.delve.app"
             target="_blank"
+            download="fileDownloadLink"
             rel="noopener noreferrer"
             className="download-button"
           >
@@ -30,8 +32,10 @@ function App() {
             />
           </a>
           <a
-            href="https://apps.apple.com/app/delve/id123456789"
+            href={fileDownloadLink}
+            // href="https://apps.apple.com/app/delve/id123456789"
             target="_blank"
+            download="fileDownloadLink"
             rel="noopener noreferrer"
             className="download-button"
           >
@@ -43,8 +47,20 @@ function App() {
         </div>
       </section>
 
+      {/* Add a section for the file download */}
+      <section className="file-download-section">
+        <h2>Download Our Brochure</h2>
+        <a
+          href={fileDownloadLink}
+          download="Delve_Brochure.pdf" // Optional: Specify the file name for download
+          className="file-download-button"
+        >
+          Download Brochure
+        </a>
+      </section>
+
       <footer className="footer">
-        <p>&copy; 2025 Delve. All rights reserved.</p>
+        <p>&copy; 2023 Delve. All rights reserved.</p>
       </footer>
     </div>
   );
