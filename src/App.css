@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   background-color: #f4f4f9;
   color: #333;
   justify-content: center;
@@ -19,22 +20,17 @@ body {
 .logo {
   width: 150px; /* Adjust the size of the SVG */
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .header h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
   color: #1a73e8;
 }
 
 .header p {
   font-size: 1.2rem;
   color: #666;
-}
-
-.download-section {
-  margin: 40px 0;
 }
 
 .download-section h2 {
@@ -53,7 +49,7 @@ body {
 }
 
 .footer {
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 0.9rem;
   color: #888;
 }
@@ -65,7 +61,7 @@ body {
 
 .file-download-section h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .file-download-button {
