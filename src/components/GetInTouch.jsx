@@ -2,7 +2,7 @@ import { FaGooglePlay, FaApple } from "react-icons/fa";
 
 const GetInTouch = () => {
   return (
-    <div className="bg-gray-100 py-16">
+    <div className="bg-gray-100 py-22">
       <div className="max-w-6xl mx-auto px-6 md:flex md:justify-between md:items-start">
         {/* Left Side: Contact Details */}
         <div className="md:w-1/2">

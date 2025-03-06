@@ -9,7 +9,7 @@ const UnlockPremium = () => {
         <img
           src={assets.unlock}
           alt="Delve App"
-          className="w-[250px] md:w-[300px] object-contain"
+          className="w-20% md:w-80% object-contain"
         />
       </div>
 
