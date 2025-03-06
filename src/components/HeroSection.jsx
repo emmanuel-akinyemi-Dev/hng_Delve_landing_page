@@ -20,28 +20,24 @@ const HeroSection = () => {
         {/* Buttons */}
         <div className="flex flex-row justify-center md:justify-start gap-4 mt-6">
           {/* Apple Store Button */}
-          <a className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-800 transition w-full max-w-[180px] sm:max-w-[200px] md:max-w-[180px] lg:max-w-[200px]">
-            <AiFillApple size={24} className="shrink-0 w-6 h-6" />
+          <a className="flex items-center gap-2 bg-black text-white px-3 py-1.5 rounded-lg shadow-md hover:bg-gray-800 transition w-full max-w-[140px] sm:max-w-[160px] md:max-w-[140px] lg:max-w-[160px]">
+            <AiFillApple size={20} className="shrink-0 w-5 h-5" />
             <div className="text-center">
-              <span className="text-xs text-Left">Download on the</span>
-              <span className="block text-md md:text-lg font-bold">
-                App Store
-              </span>
+              <span className="text-[10px] text-Left">Download on the</span>
+              <span className="block text-sm font-bold">App Store</span>
             </div>
           </a>
 
           {/* Google Play Button */}
-          <a className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-900 transition w-full max-w-[180px] sm:max-w-[200px] md:max-w-[180px] lg:max-w-[200px]">
+          <a className="flex items-center gap-2 bg-black text-white px-3 py-1.5 rounded-lg shadow-md hover:bg-gray-900 transition w-full max-w-[140px] sm:max-w-[160px] md:max-w-[140px] lg:max-w-[160px]">
             <img
               src={assets.googleplayicon}
               alt="Google Play"
-              className="w-6 h-6 shrink-0"
+              className="w-5 h-5 shrink-0"
             />
             <div className="text-Left">
-              <span className="text-xs">Get it on</span>
-              <span className="block text-md md:text-lg font-bold">
-                Google Play
-              </span>
+              <span className="text-[10px]">Get it on</span>
+              <span className="block text-sm font-bold">Google Play</span>
             </div>
           </a>
         </div>

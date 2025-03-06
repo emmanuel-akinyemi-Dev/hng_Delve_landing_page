@@ -7,7 +7,7 @@ const testimonials = [
     language: "French learner",
     quote:
       "Delve is the language learning app I have been waiting for. I have been looking for a way to truly be immersed because that’s the best way to learn. Merci beaucoup!",
-    image: assets.man1,
+    image: assets.group1,
     rating: 5,
   },
   {
@@ -23,7 +23,7 @@ const testimonials = [
     language: "Turkish learner",
     quote:
       "I never imagined language learning could feel so immersive and fun! Delve’s real-life simulations transported me straight into a new culture. Truly a game-changer!",
-    image: assets.man3,
+    image: assets.group2,
     rating: 5,
   },
   {
@@ -47,7 +47,7 @@ const Testimonials = () => {
               <img
                 src={testimonial.image}
                 alt={testimonial.name}
-                className="w-16 h-16 rounded-full object-cover mr-4"
+                className="w-20 h-20  object-cover mr-4"
               />
               <div>
                 <p className="font-semibold">{testimonial.name}</p>
