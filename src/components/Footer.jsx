@@ -5,12 +5,12 @@ import { Facebook, Linkedin, Youtube } from "lucide-react";
 const DelveFooter = () => {
   return (
     <footer className="w-full bg-purple-800 text-white mt-20">
-      <div className="mx-auto max-w-6xl px-4 py-4 md:py-10">
-        <div className="flex flex-row justify-between items-start">
+      <div className="mx-auto max-w-7xl px-4 py-4 md:py-10">
+        <div className="flex flex-col-reverse md:flex-row justify-between items-start mb-20">
           {/* Logo and Download Section */}
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
-              <img src="./delve logo 3d 1.svg" alt="log" />
+              <img src="./delve logo 3d 1.svg" alt="logo" />
               <span className="text-2xl font-semibold">Delve</span>
             </div>
             <div className="flex flex-row space-x-2">
@@ -47,7 +47,8 @@ const DelveFooter = () => {
             </div>
           </div>
 
-          <div className="flex flex-row max-w-3xl mx-auto space-x-10">
+          {/* Navigation Links */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4 mb-10 md:mb-0">
             {/* Navigation Links - First Column */}
             <div className="space-y-2 flex flex-col justify-start">
               <a
@@ -135,23 +136,25 @@ const DelveFooter = () => {
           </div>
 
           {/* Newsletter Subscription */}
-          <div className="space-y-4 flex flex-col justify-start">
-            <h3 className="font-medium uppercase">Stay up to date</h3>
-            <div className="flex flex-col space-y-2">
+          <div className="space-y-4 flex flex-col justify-start w-full md:w-auto">
+            <h3 className="font-medium uppercase text-left">Stay up to date</h3>
+            <div className="flex md:flex-col space-x-3 md:space-y-3 mb-10 md:mb-0">
               <Input
                 type="email"
                 placeholder="Enter your email here"
                 className="bg-white border-gray-200"
               />
-              <button className="bg-purple-700 hover:bg-purple-800 text-white rounded-[10px] p-2">
-                Subscribe
-              </button>
+              <div className="flex justify-end">
+                <button className="bg-purple-700 hover:bg-purple-800 text-white rounded-[10px] px-4 py-1">
+                  Subscribe
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Social Media and Copyright */}
-        <div className="flex flex-col md:flex-row justify-between items-center mt-8 pt-4 border-t border-purple-300">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-4 border-t border-purple-300">
           <div className="flex space-x-4 mb-4 md:mb-0">
             <a href="#" aria-label="LinkedIn">
               <Linkedin className="h-5 w-5" />
