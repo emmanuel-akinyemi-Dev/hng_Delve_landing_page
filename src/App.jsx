@@ -86,6 +86,7 @@ const App = () => {
         <Route path="/faq" element={<Faq />} />
         <Route path="/contactus" element={<ContactUs />} />
       </Routes>
+      {/* link footer here  */}
     </div>
   );
 };
