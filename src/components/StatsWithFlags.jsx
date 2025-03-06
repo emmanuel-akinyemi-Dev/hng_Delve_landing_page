@@ -21,7 +21,7 @@ const StatsWithFlags = () => {
   ];
 
   return (
-    <div className="w-full flex flex-col items-center gap-8 py-10">
+    <div className="w-full flex flex-col items-center justify-center gap-8 py-10">
       {/* Stats Section */}
       <div className="flex flex-wrap justify-center gap-10 text-center">
         {stats.map((stat, index) => (
@@ -34,7 +34,7 @@ const StatsWithFlags = () => {
 
       {/* Flags Section */}
       <div className="w-full overflow-hidden">
-        <div className="flex gap-6 px-6 py-3 overflow-x-auto scrollbar-hide">
+        <div className="flex gap-6 px-6 py-3 justify-center overflow-x-auto scrollbar-hide">
           {flags.map((flag, index) => (
             <img
               key={index}
