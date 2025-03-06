@@ -21,7 +21,10 @@ const HeroSection = () => {
         <div className="flex flex-row justify-center md:justify-start gap-4 mt-6">
           {/* Apple Store Button */}
           <a
-            href="#"
+            href="https://apps.apple.com/app/delve/id123456789"
+            target="_blank"
+            download="fileDownloadLink"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-800 transition w-full max-w-[180px] sm:max-w-[200px] md:max-w-[180px] lg:max-w-[200px]"
           >
             <AiFillApple size={24} className="shrink-0 w-6 h-6" />
@@ -35,7 +38,10 @@ const HeroSection = () => {
 
           {/* Google Play Button */}
           <a
-            href="#"
+            href="https://play.google.com/store/apps/details?id=com.delve.app"
+            target="_blank"
+            download="fileDownloadLink"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-900 transition w-full max-w-[180px] sm:max-w-[200px] md:max-w-[180px] lg:max-w-[200px]"
           >
             <img
