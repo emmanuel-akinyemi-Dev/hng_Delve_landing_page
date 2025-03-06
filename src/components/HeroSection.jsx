@@ -23,7 +23,7 @@ const HeroSection = () => {
           <a className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-800 transition w-full max-w-[180px] sm:max-w-[200px] md:max-w-[180px] lg:max-w-[200px]">
             <AiFillApple size={24} className="shrink-0 w-6 h-6" />
             <div className="text-left">
-              <span className="text-xs">Download on the</span>
+              <span className="text-xs text-center">Download on the</span>
               <span className="block text-sm md:text-base font-bold">
                 App Store
               </span>
@@ -38,7 +38,7 @@ const HeroSection = () => {
               className="w-6 h-6 shrink-0"
             />
             <div className="text-left">
-              <span className="text-xs">Get it on</span>
+              <span className="text-xs text-center">Get it on</span>
               <span className="block text-sm md:text-base font-bold">
                 Google Play
               </span>
