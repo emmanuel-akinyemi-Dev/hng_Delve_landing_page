@@ -10,6 +10,11 @@ import flag6 from "./flag6.png";
 import flag7 from "./flag7.png";
 import flag8 from "./flag8.png";
 import flag9 from "./flag9.png";
+import man1 from "./man1.png";
+import man2 from "./man2.png";
+import man3 from "./man3.png";
+import man4 from "./man4.png";
+import unlock from "./unlock.png";
 
 export const assets = {
   delvelogo,
@@ -24,4 +29,9 @@ export const assets = {
   flag7,
   flag8,
   flag9,
+  man1,
+  man2,
+  man3,
+  man4,
+  unlock,
 };

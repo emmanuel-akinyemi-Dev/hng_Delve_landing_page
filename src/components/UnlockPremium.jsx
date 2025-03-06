@@ -1,4 +1,5 @@
 import React from "react";
+import { assets } from "../assets/assets";
 
 const UnlockPremium = () => {
   return (
@@ -6,7 +7,7 @@ const UnlockPremium = () => {
       {/* Left Side - Phone Image */}
       <div className="w-full md:w-1/2 flex justify-center">
         <img
-          src="/phone-mockup.png"
+          src={assets.unlock}
           alt="Delve App"
           className="w-[250px] md:w-[300px] object-contain"
         />
