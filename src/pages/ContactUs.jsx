@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import GetInTouch from "../components/GetInTouch";
 
-const ContactUs = () => {
+const ContactUs = React.forwardRef((props, ref) => {
   return (
-    <div>ContactUs</div>
-  )
-}
+    <section ref={ref}>
+      <GetInTouch />
+    </section>
+  );
+});
 
-export default ContactUs
+export default ContactUs;

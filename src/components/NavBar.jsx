@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router";
+import { Link } from "react-router-dom";
 import "animate.css";
 import { assets } from "../assets/assets";
 
-const Navbar = () => {
+const Navbar = ({ scrollToHome, scrollToPricing, scrollToFaq, scrollToContactUs }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const closeMenu = () => {
@@ -46,60 +46,40 @@ const Navbar = () => {
           </span>
         </div>
 
-        {/* Desktop Navigation Links (Centered) */}
+        {/* Desktop Navigation Links */}
         <div className="hidden md:flex flex-1 justify-center items-center space-x-8">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive ? "text-[#3D1166] font-medium" : "text-black font-medium"
-            }
-          >
+          <button onClick={scrollToHome} className="text-black font-medium hover:text-[#3D1166]">
             Home
-          </NavLink>
-          <NavLink
-            to="/pricing"
-            className={({ isActive }) =>
-              isActive ? "text-[#3D1166]" : "text-black"
-            }
-          >
+          </button>
+          <button onClick={scrollToPricing} className="text-black font-medium hover:text-[#3D1166]">
             Pricing
-          </NavLink>
-          <NavLink
-            to="/faq"
-            className={({ isActive }) =>
-              isActive ? "text-[#3D1166]" : "text-black"
-            }
-          >
+          </button>
+          <button onClick={scrollToFaq} className="text-black font-medium hover:text-[#3D1166]">
             FAQ
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              isActive ? "text-[#3D1166]" : "text-black"
-            }
-          >
+          </button>
+          <button onClick={scrollToContactUs} className="text-black font-medium hover:text-[#3D1166]">
             Contact Us
-          </NavLink>
+          </button>
         </div>
 
-        {/* Desktop Try Delve Button (Aligned to the Right) */}
+        {/* Desktop Try Delve Button */}
         <div className="hidden md:block">
-          <NavLink
+          <Link
             to="/try-delve"
-            className="bg-purple-600 text-white px-4 py-2 rounded-lg"
+            className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700"
           >
             Try Delve
-          </NavLink>
+          </Link>
         </div>
 
         {/* Mobile Try Delve Button */}
         <div className="md:hidden">
-          <NavLink
+          <Link
             to="/try-delve"
-            className="bg-purple-600 text-white px-4 py-2 rounded-lg"
+            className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700"
           >
             Try Delve
-          </NavLink>
+          </Link>
         </div>
       </div>
 
@@ -109,70 +89,30 @@ const Navbar = () => {
           isOpen ? "block" : "hidden"
         } fixed top-16 left-0 right-0 bg-white shadow-lg z-40`}
       >
-        <NavLink
-          to="/"
-          onClick={closeMenu}
-          className={({ isActive }) =>
-            `block px-4 py-3 ${
-              isActive
-                ? "bg-[#3D1166] text-white"
-                : "text-black hover:bg-gray-100"
-            } animate__animated ${
-              isOpen ? "animate__fadeInDown" : "animate__fadeOutUp"
-            }`
-          }
-          style={{ animationDelay: "0.1s" }}
+        <button
+          onClick={() => { closeMenu(); scrollToHome(); }}
+          className="block w-full px-4 py-3 text-left text-black hover:bg-gray-100"
         >
           Home
-        </NavLink>
-        <NavLink
-          to="/pricing"
-          onClick={closeMenu}
-          className={({ isActive }) =>
-            `block px-4 py-3 ${
-              isActive
-                ? "bg-[#3D1166] text-white"
-                : "text-black hover:bg-gray-100"
-            } animate__animated ${
-              isOpen ? "animate__fadeInDown" : "animate__fadeOutUp"
-            }`
-          }
-          style={{ animationDelay: "0.2s" }}
+        </button>
+        <button
+          onClick={() => { closeMenu(); scrollToPricing(); }}
+          className="block w-full px-4 py-3 text-left text-black hover:bg-gray-100"
         >
           Pricing
-        </NavLink>
-        <NavLink
-          to="/faq"
-          onClick={closeMenu}
-          className={({ isActive }) =>
-            `block px-4 py-3 ${
-              isActive
-                ? "bg-[#3D1166] text-white"
-                : "text-black hover:bg-gray-100"
-            } animate__animated ${
-              isOpen ? "animate__fadeInDown" : "animate__fadeOutUp"
-            }`
-          }
-          style={{ animationDelay: "0.3s" }}
+        </button>
+        <button
+          onClick={() => { closeMenu(); scrollToFaq(); }}
+          className="block w-full px-4 py-3 text-left text-black hover:bg-gray-100"
         >
           FAQ
-        </NavLink>
-        <NavLink
-          to="/contactus"
-          onClick={closeMenu}
-          className={({ isActive }) =>
-            `block px-4 py-3 ${
-              isActive
-                ? "bg-[#3D1166] text-white"
-                : "text-black hover:bg-gray-100"
-            } animate__animated ${
-              isOpen ? "animate__fadeInDown" : "animate__fadeOutUp"
-            }`
-          }
-          style={{ animationDelay: "0.4s" }}
+        </button>
+        <button
+          onClick={() => { closeMenu(); scrollToContactUs(); }}
+          className="block w-full px-4 py-3 text-left text-black hover:bg-gray-100"
         >
           Contact Us
-        </NavLink>
+        </button>
       </div>
     </nav>
   );

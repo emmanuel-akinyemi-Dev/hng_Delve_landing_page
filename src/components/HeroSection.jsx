@@ -22,9 +22,9 @@ const HeroSection = () => {
           {/* Apple Store Button */}
           <a className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-800 transition w-full max-w-[180px] sm:max-w-[200px] md:max-w-[180px] lg:max-w-[200px]">
             <AiFillApple size={24} className="shrink-0 w-6 h-6" />
-            <div className="text-left">
-              <span className="text-xs text-center">Download on the</span>
-              <span className="block text-sm md:text-base font-bold">
+            <div className="text-center">
+              <span className="text-xs text-Left">Download on the</span>
+              <span className="block text-md md:text-lg font-bold">
                 App Store
               </span>
             </div>
@@ -37,9 +37,9 @@ const HeroSection = () => {
               alt="Google Play"
               className="w-6 h-6 shrink-0"
             />
-            <div className="text-left">
-              <span className="text-xs text-center">Get it on</span>
-              <span className="block text-sm md:text-base font-bold">
+            <div className="text-Left">
+              <span className="text-xs">Get it on</span>
+              <span className="block text-md md:text-lg font-bold">
                 Google Play
               </span>
             </div>
