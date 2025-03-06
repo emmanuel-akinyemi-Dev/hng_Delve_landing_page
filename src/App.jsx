@@ -75,6 +75,7 @@ import Navbar from "./components/NavBar";
 import Pricing from "./pages/Pricing";
 import Faq from "./pages/Faq";
 import ContactUs from "./pages/ContactUs";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -86,7 +87,7 @@ const App = () => {
         <Route path="/faq" element={<Faq />} />
         <Route path="/contactus" element={<ContactUs />} />
       </Routes>
-      {/* link footer here  */}
+      <Footer />
     </div>
   );
 };
