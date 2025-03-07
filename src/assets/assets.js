@@ -15,7 +15,13 @@ import man2 from "./man2.png";
 import man3 from "./man3.png";
 import man4 from "./man4.png";
 import unlock from "./unlock.png";
-
+import phone from "./phone.png";
+import question from "./question.png";
+import cap from "./cap.png";
+import ai from "./ai.png";
+import shoot from "./shoot.png";
+import group1 from "./group1.png";
+import group2 from "./group2.png";
 export const assets = {
   delvelogo,
   googleplayicon,
@@ -34,4 +40,11 @@ export const assets = {
   man3,
   man4,
   unlock,
+  phone,
+  question,
+  shoot,
+  cap,
+  ai,
+  group1,
+  group2,
 };

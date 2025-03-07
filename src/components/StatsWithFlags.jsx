@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { assets } from "../assets/assets";
 
 const StatsWithFlags = () => {
-  const stats = [
-    { value: "3,000+", text: "5 star reviews" },
-    { value: "10,000+", text: "active users" },
-    { value: "100%", text: "improved learners" },
-  ];
+  const stats = React.useMemo(
+    () => [
+      { value: 3000, text: "5 star reviews" },
+      { value: 10000, text: "active users" },
+      { value: 100, text: "improved learners" },
+    ],
+    []
+  );
 
   const flags = [
     assets.flag,
@@ -20,13 +23,39 @@ const StatsWithFlags = () => {
     assets.flag9,
   ];
 
+  const [animatedValues, setAnimatedValues] = useState(stats.map(() => 0));
+
+  useEffect(() => {
+    const duration = 4000; // Increased duration for slower animation (4 seconds)
+    const startTimes = stats.map(() => Date.now());
+
+    const animationFrame = requestAnimationFrame(function animate() {
+      const now = Date.now();
+      const newValues = stats.map((stat, index) => {
+        const elapsedTime = now - startTimes[index];
+        const progress = Math.min(elapsedTime / duration, 1);
+        return Math.floor(progress * stat.value);
+      });
+
+      setAnimatedValues(newValues);
+
+      if (newValues.some((value, index) => value < stats[index].value)) {
+        requestAnimationFrame(animate);
+      }
+    });
+
+    return () => cancelAnimationFrame(animationFrame);
+  }, [stats]);
+
   return (
     <div className="w-full flex flex-col items-center justify-center gap-8 py-10">
       {/* Stats Section */}
       <div className="flex flex-wrap justify-center gap-10 text-center">
         {stats.map((stat, index) => (
           <div key={index} className="text-gray-800">
-            <p className="text-2xl font-bold text-[#9c50e2]">{stat.value}</p>
+            <p className="text-2xl font-bold text-[#9c50e2]">
+              {animatedValues[index].toLocaleString()}+
+            </p>
             <p className="text-sm">{stat.text}</p>
           </div>
         ))}

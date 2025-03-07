@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { assets } from "../assets/assets";
 
 const faqs = [
   {
@@ -54,8 +55,8 @@ const FAQ = () => {
             If you need more help, our support team is here for you.
           </p>
           {/* Question Mark Icon */}
-          <div className="flex justify-center md:justify-start mt-6">
-            <span className="text-purple-600 text-8xl font-bold">?</span>
+          <div className="hidden md:flex  justify-center  md:justify-center mt-6">
+            <img src={assets.question} alt="" />
           </div>
         </div>
 
