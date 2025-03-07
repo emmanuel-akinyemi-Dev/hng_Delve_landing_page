@@ -2,9 +2,9 @@ import React, { useRef } from "react";
 import "./App.css";
 import Navbar from "./components/NavBar";
 import Home from "./pages/Home";
-import Pricing from "./pages/Pricing";
-import Faq from "./pages/Faq";
-import ContactUs from "./pages/ContactUs";
+// import Pricing from "./pages/Pricing";
+// import Faq from "./pages/Faq";
+// import ContactUs from "./pages/ContactUs";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -31,9 +31,9 @@ const App = () => {
 
       {/* Assign refs to each section */}
       <Home ref={homeRef} />
-      <Pricing ref={pricingRef} />
-      <Faq ref={faqRef} />
-      <ContactUs ref={contactUsRef} />
+      {/* <Pricing ref={pricingRef} /> */}
+      {/* <Faq ref={faqRef} /> */}
+      {/* <ContactUs ref={contactUsRef} /> */}
       <Footer />
     </div>
   );
