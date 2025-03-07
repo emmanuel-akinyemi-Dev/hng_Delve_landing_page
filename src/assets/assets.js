@@ -22,6 +22,10 @@ import ai from "./ai.png";
 import shoot from "./shoot.png";
 import group1 from "./group1.png";
 import group2 from "./group2.png";
+import landing from "./landing.png";
+import multiple from "./multiple.png";
+import rectangle from "./rectangle.png";
+import rec from "./rec.png";
 export const assets = {
   delvelogo,
   googleplayicon,
@@ -47,4 +51,8 @@ export const assets = {
   ai,
   group1,
   group2,
+  landing,
+  multiple,
+  rectangle,
+  rec,
 };
