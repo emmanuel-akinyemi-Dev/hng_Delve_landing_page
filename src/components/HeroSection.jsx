@@ -12,6 +12,7 @@ const HeroSection = () => {
           <span className="text-[#8324db]">3D Quests</span> & Speak with
           Confidence
         </h1>
+        <p className="text-black font-semibold text-2xl">Comming Soon....</p>
         <p className="mt-4 text-base md:text-lg text-gray-600 max-w-md mx-auto md:mx-0">
           Embark on exciting quests, conquer daily challenges, and speak
           confidently in any situation.
@@ -20,7 +21,11 @@ const HeroSection = () => {
         {/* Buttons */}
         <div className="flex flex-row justify-center md:justify-start gap-4 mt-6">
           {/* Apple Store Button */}
-          <a className="flex items-center gap-2 bg-black text-white px-3 py-1.5 rounded-lg shadow-md hover:bg-gray-800 transition w-full max-w-[140px] sm:max-w-[160px] md:max-w-[140px] lg:max-w-[160px]">
+          <a
+            download="delve app"
+            href="https://hng12.slack.com/files/U08AMEZ40LW/F08G9MW9ELE/build-1741272219432.apk"
+            className="flex items-center gap-2 bg-black text-white px-3 py-1.5 rounded-lg shadow-md hover:bg-gray-800 transition w-full max-w-[140px] sm:max-w-[160px] md:max-w-[140px] lg:max-w-[160px]"
+          >
             <AiFillApple size={20} className="shrink-0 w-5 h-5" />
             <div className="text-center">
               <span className="text-[10px] text-Left">Download on the</span>
@@ -29,7 +34,11 @@ const HeroSection = () => {
           </a>
 
           {/* Google Play Button */}
-          <a className="flex items-center gap-2 bg-black text-white px-3 py-1.5 rounded-lg shadow-md hover:bg-gray-900 transition w-full max-w-[140px] sm:max-w-[160px] md:max-w-[140px] lg:max-w-[160px]">
+          <a
+            download="delve app"
+            href="https://hng12.slack.com/files/U08AMEZ40LW/F08G9MW9ELE/build-1741272219432.apk"
+            className="flex items-center gap-2 bg-black text-white px-3 py-1.5 rounded-lg shadow-md hover:bg-gray-900 transition w-full max-w-[140px] sm:max-w-[160px] md:max-w-[140px] lg:max-w-[160px]"
+          >
             <img
               src={assets.googleplayicon}
               alt="Google Play"

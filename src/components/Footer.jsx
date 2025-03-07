@@ -21,13 +21,15 @@ const Footer = () => {
             </div>
             <div className="flex gap-3 mt-3">
               <a
-                 
+                download="delve app"
+                href="https://hng12.slack.com/files/U08AMEZ40LW/F08G9MW9ELE/build-1741272219432.apk"
                 className="bg-[#7D23E0] hover:bg-[#6B1DBA] px-5 py-2 rounded-lg flex items-center gap-2 shadow-md text-white cursor-pointer"
               >
                 <FaGooglePlay /> Download
               </a>
               <a
-                
+                download="delve app"
+                href="https://hng12.slack.com/files/U08AMEZ40LW/F08G9MW9ELE/build-1741272219432.apk"
                 className="bg-[#7D23E0] hover:bg-[#6B1DBA] px-5 py-2 rounded-lg flex items-center gap-2 shadow-md text-white cursor-pointer"
               >
                 <FaApple /> Download
