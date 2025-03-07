@@ -55,7 +55,7 @@ const FAQ = () => {
             If you need more help, our support team is here for you.
           </p>
           {/* Question Mark Icon */}
-          <div className="flex justify-center  md:justify-center mt-6">
+          <div className="hidden md:flex  justify-center  md:justify-center mt-6">
             <img src={assets.question} alt="" />
           </div>
         </div>

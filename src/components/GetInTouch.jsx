@@ -5,7 +5,7 @@ const GetInTouch = () => {
     <div className="bg-gray-100 py-22">
       <div className="max-w-6xl mx-auto px-6 md:flex md:justify-between md:items-start">
         {/* Left Side: Contact Details */}
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 hidden md:block">
           <h2 className="text-4xl font-extrabold text-gray-900">Contact Us</h2>
           <p className="mt-2 text-lg text-gray-800">
             Email, call, or fill the form to learn how Delve can enhance your
