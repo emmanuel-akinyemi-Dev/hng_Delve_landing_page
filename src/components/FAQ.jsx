@@ -43,7 +43,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="w-full px-6 md:px-24 py-16 bg-gray-100">
+    <section className="w-full px-6 md:px-24 py-22 bg-gray-100">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-start">
         {/* Left Side - FAQ Intro & Icon */}
         <div className="text-center md:text-left">
